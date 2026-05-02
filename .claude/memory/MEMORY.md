@@ -1,0 +1,1 @@
+- [Project: LightAudit Pro](project_lightaudit.md) — Next.js lighting audit & sales workflow demo app in INVNTRY-MGMNT
