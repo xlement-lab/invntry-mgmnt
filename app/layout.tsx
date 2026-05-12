@@ -11,14 +11,18 @@ export const metadata: Metadata = {
   description: 'Lighting Audit & Sales Workflow Management',
 }
 
+const DEMO_ENDED = false
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <AppProvider>
-          <DemoEndedOverlay>
-            {children}
-          </DemoEndedOverlay>
+          {DEMO_ENDED ? (
+            <DemoEndedOverlay>{children}</DemoEndedOverlay>
+          ) : (
+            children
+          )}
         </AppProvider>
       </body>
     </html>
